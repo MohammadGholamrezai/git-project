@@ -1,0 +1,56 @@
+@font-face{
+font-family: "yekan";
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/B/BYEKAN_0.TTF') format("truetype");}
+body{
+font-family: "yekan", tahoma, !important;
+background-color: #fbf7f7;	}
+.ads{
+    margin-top: 19px;
+    padding: 2px;
+    border: 2px;
+    border-color: #a2a2a2;
+}
+.logo{
+	    margin-top: 17px;
+    /* margin-bottom: 5px; */
+    /* margin-right: 2px; */
+    padding: 2px;
+    border: 2px;
+    border-color: darkgrey;
+    border-radius: 3px;
+}
+.box{
+	background-color: white;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #f7f4f4;
+    /* border-color: #eae6e6; */
+}
+.hr{
+	    padding: 3px 0px;
+    border-bottom: 1px #e0e0e0 solid;
+}
+ul{
+	list-style:none;
+	padding-right:0 !important;
+}
+.wiget-menu-list li{
+  	padding: 5px;
+    background-color: #fbf8f8;
+    margin: 2px;
+    border-radius: 5px;
+}
+.wiget-menu-list li:hover{
+	padding: 5px;
+    background-color: #f3ecec;
+    margin: 2px;
+    border-radius: 5px;
+}
+.img-res{
+	width:500px;
+	height:250px;
+	margin-right:125px;
+	margin-top:25px;
+}

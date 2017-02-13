@@ -1,0 +1,266 @@
+<?php
+include ("config.php");
+?>
+
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> آموزش طراحی وب</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="css/rtl-bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+	<link href="css/style1.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrapValidator.min.js"></script>
+
+  </head>
+  <body>
+
+
+   <div class="container">
+ 	 <div class="row">
+ 	 <div class="col-lg-12">
+
+ 	 <nav class="navbar navbar-default navbar-fixed-top">
+ 	 <div class="container-fluid">
+
+ 	 <div class="navbar-header">
+ 	 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+ 	 <span class="icon-bar"></span>
+ 	 <span class="icon-bar"></span>
+ 	 <span class="icon-bar"></span>
+ 	 </button>
+ 	 </div>
+
+ 	 <div class="collapse navbar-collapse" id="navbar1">
+ 	 <ul class="nav navbar-nav">
+ 	    <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+ 		<li><a href="#">صفحه اصلی</a></li>
+ 		<li><a href="#">اخبار وب و مقالات</a></li>
+ 		<li><a href="#">دوره های آموزشی</a></li>
+ 		<li><a href="#">درباره ما</a></li>
+ 	 </ul>
+ 	 </div>
+
+ 	 </div>
+ 	 </nav>
+      </div>
+ 	 </div>
+
+<div class="row"> <!-- logo and tiser -->
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <img class="logo" src="image/logo1.jpg" />
+    <img class="banner pull-left hidden-sm hidden-xs" src="image/banner.png" />
+
+  </div>
+</div> <!-- end of logo and tiser -->
+
+<div class="row"> <!-- second menu -->
+  <div class="col-lg-12">
+
+  <nav class="navbar navbar-default second-menu">
+  <div class="container-fluid">
+
+  <div class="navbar-header">
+  <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar2">
+  <ul class="nav navbar-nav">
+   <li><a href="#">اخبار وب<span class="caret"></span></a></li>
+   <li><a href="#">برنامه نویسی<span class="caret"></span></a></li>
+   <li><a href="#">وردپرس<span class="caret"></span></a></li>
+   <li><a href="#">طراحی وب<span class="caret"></span></a></li>
+  </ul>
+
+  <div class="input-group in-g1 pull-left">
+      <input type="text" class="form-control" placeholder="کلمه مورد نظر را تایپ کنید..." aria-describedby="ig1">
+   <span class="input-group-btn" id="ig1">
+     <button type="button" class="btn btn-info">جستجو</button>
+   </span>
+  </div>
+  </div>
+  </div>
+  </nav>
+     </div>
+</div>   <!-- end of second menu -->
+
+<div class="row"> <!-- middle body of site (sidebar, middle content, sidebar) -->
+
+
+
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+    <div class="box"><span class="glyphicon glyphicon-user"></span>
+    صفحه ثبت نام در سایت
+    <div class="hr"></div>
+
+<br/>
+<br/>
+
+
+<form id="contactForm" method="post" action="sent.php" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-md-3 control-label">نام:</label>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" name="firstname" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">نام خانوادگی:</label>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" name="lastname" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">ایمیل</label>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">نام کاربری</label>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" name="username" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">کلمه عبور</label>
+        <div class="col-lg-3">
+            <input type="password" class="form-control" name="password" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">تکرار کلمه عبور</label>
+        <div class="col-lg-3">
+            <input type="password" class="form-control" name="repass" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">توضییحات</label>
+        <div class="col-lg-3">
+            <textarea class="form-control" name="content" rows="5"></textarea>
+        </div>
+    </div>
+    <!-- #messages is where the messages are placed inside -->
+    <div class="form-group">
+        <div class="col-md-9 col-md-offset-3">
+            <div id="messages"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-3 col-md-offset-3">
+
+
+          <script>
+          $(document).ready(function() {
+              $('#contactForm').bootstrapValidator({
+                  container: '#messages',
+                  feedbackIcons: {
+                      valid: 'glyphicon glyphicon-ok',
+                      invalid: 'glyphicon glyphicon-remove',
+                      validating: 'glyphicon glyphicon-refresh'
+                  },
+                  fields: {
+                      firstname: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا نام خود را وارد نمایید'
+                              }
+                          }
+                      },
+                      lastname: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا نام خانوادگی خود را وارد نمایید'
+                              }
+                          }
+                      },
+                      email: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا آدرس ایمیل خود را وارد نمایید'
+                              },
+                              emailAddress: {
+                                  message: 'آدرس ایمیل وارد شده صحیح نمی باشد، لطفا اصلاح نمایید'
+                              }
+                          }
+                      },
+                      username: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا نام کاربری خود را وارد نمایید'
+                              }
+                          }
+                      },
+                      password: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا کلمه عبور خود را وارد نمایید'
+                              }
+                          }
+                      },
+                      repass: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا تکرار کلمه عبور خود را وارد نمایید'
+                              }
+
+                          }
+                      },
+                      content: {
+                          validators: {
+                              notEmpty: {
+                                  message: 'لطفا توضییحات را کامل نمایید'
+                              },
+                              stringLength: {
+                                  max: 500,
+                                  message: 'توضییحات باید کمتر از 500 کاراکتر باشد'
+                              }
+                          }
+                      }
+                  }
+              });
+          });
+
+          </script>
+
+
+
+            <button type="submit" name="btnsend" style="width:100px" class="btn btn-info text-center" aria-label="Right Align">ثبت</button>
+        </div>
+    </div>
+</form>
+
+<!--      -->
+
+
+
+<!--      __>
+
+
+
+
+    </div>
+  </div>
+
+</div>  <!-- end of middle body of site (sidebar, middle content, sidebar) -->
+
+<div class="row"> <!-- footer -->
+</div>  <!-- end of footer -->
+
+
+
+ 	 </div> <!-- end container-->
+
+  </body>
+</html>
